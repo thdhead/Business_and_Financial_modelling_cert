@@ -1,7 +1,7 @@
 # The Captstone (in progress)
 **Purpose:** produce a complete, end‑to‑end decision recommendation from a provided dataset.
 
-**What you do:**
+**Objectives of the module**
 - build a model and recommend a business strategy based on the model outputs
 - present a recommendation in a professional-quality PowerPoint with data + analysis
 
