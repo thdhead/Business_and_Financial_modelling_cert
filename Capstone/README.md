@@ -10,8 +10,9 @@
 - 2) Finish with a decision recommendation and slide deck
 - 3) Make a slide deck demonstraating the importance of portfolio diversification
 
-## You will find here:
-1) An Excel file (Capstone.xlsx) that is a small “financial analytics lab” built around historical market data. It takes daily price series for **10 individual equities** plus a **market index**, converts them into daily returns, summarizes the behavior of each asset (return and risk), and then uses those results to:
+# You will find here:
+## 1) Capstone.slsx
+An Excel file (Capstone.xlsx) that is a small “financial analytics lab” built around historical market data. It takes daily price series for **10 individual equities** plus a **market index**, converts them into daily returns, summarizes the behavior of each asset (return and risk), and then uses those results to:
 - compare assets side-by-side,
 - build and evaluate portfolios (2-asset and 10-asset),
 - estimate **CAPM** parameters (alpha and beta) via regressions against the market.
