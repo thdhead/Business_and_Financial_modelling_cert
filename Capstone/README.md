@@ -20,8 +20,8 @@ The core date range is **2010-06-30 → 2016-06-30**.
 
 ---
 
-## Data
-### Daily market data sheets (one per asset)
+### Data
+#### Daily market data sheets (one per asset)
 The workbook contains one worksheet per asset:
 
 - **AAPL, BIDU, COP, DIS, GOOG, TSLA, TTM, XOM, MSFT, WFC** (stocks)
@@ -36,9 +36,9 @@ Each of these sheets follows the same pattern:
 
 ---
 
-## Sheet-by-sheet walkthrough
+### Sheet-by-sheet walkthrough
 
-### 1) `AAPL`, `BIDU`, …, `WFC` (individual stock sheets)
+#### 1) `AAPL`, `BIDU`, …, `WFC` (individual stock sheets)
 **Purpose:** Turn raw prices into return data and basic risk/return statistics.
 
 **What happens here:**
@@ -53,7 +53,7 @@ Each of these sheets follows the same pattern:
 
 ---
 
-### 2) `DJI` (market/index sheet)
+#### 2) `DJI` (market/index sheet)
 **Purpose:** Provide the “market return” series used as a benchmark.
 
 **What happens here:**
@@ -62,7 +62,7 @@ Each of these sheets follows the same pattern:
 
 ---
 
-### 3) `CAPM`
+#### 3) `CAPM`
 **Purpose:** Estimate CAPM-style parameters for each stock relative to the market.
 
 **What happens here:**
@@ -81,7 +81,7 @@ Each of these sheets follows the same pattern:
 
 ---
 
-### 4) `MSFT_WFC_Port`
+#### 4) `MSFT_WFC_Port`
 **Purpose:** Two-asset portfolio exploration (weights, risk, return).
 
 **What happens here:**
@@ -97,7 +97,7 @@ Each of these sheets follows the same pattern:
 
 ---
 
-### 5) `10_Stock_Port`
+#### 5) `10_Stock_Port`
 **Purpose:** Multi-asset (10-stock) portfolio assembly + risk model.
 
 **What happens here:**
@@ -116,7 +116,7 @@ Each of these sheets follows the same pattern:
 
 ---
 
-### 6) `AAPL Monthly`
+#### 6) `AAPL Monthly`
 **Purpose:** Monthly-return version of the AAPL workflow.
 
 **What happens here:**
@@ -125,7 +125,7 @@ Each of these sheets follows the same pattern:
 
 ---
 
-### 7) `tests`
+#### 7) `tests`
 **Purpose:** Sandbox / validation sheet.
 
 **What happens here (now):**
@@ -134,13 +134,13 @@ Each of these sheets follows the same pattern:
 
 ---
 
-## Assumptions and interpretation notes
+### Assumptions and interpretation notes
 - Returns are treated as **simple period-over-period returns** (not log returns).
 - Sharpe-style ratios are computed using a **0 risk-free baseline**.
 
 ---
 
-## Typical workflow
+### Typical workflow
 1. **Update data (optional):**
    - Replace the OHLCV/Adj Close columns in each asset sheet with new data.
    - Keep the column structure the same so downstream references still point to the correct return series.
@@ -160,7 +160,7 @@ Each of these sheets follows the same pattern:
 
 ---
 
-## Quick map of “where to change things”
+### Quick map of “where to change things”
 - Change / paste new price data: **each asset sheet** (`AAPL`, `MSFT`, …, `DJI`)
 - Change 2-asset weights grid: **`MSFT_WFC_Port`**
 - Change 10-asset portfolio weights: **`10_Stock_Port`**
